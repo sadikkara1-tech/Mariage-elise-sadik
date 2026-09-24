@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elise & Sadık — 19.12.2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+
+  <div class="language">
+    <button onclick="setLanguage('fr')">🇫🇷 FR</button>
+    <button onclick="setLanguage('tr')">🇹🇷 TR</button>
+    <button onclick="setLanguage('ku')">☀️ KU</button>
+    <button onclick="setLanguage('de')">🇩🇪 DE</button>
+    <button onclick="setLanguage('en')">🇬🇧 EN</button>
+  </div>
+
+  <div class="hero-content">
+
+    <p class="small-title" data-i18n="wedding">
+      NOTRE MARIAGE
+    </p>
+
+    <h1>Elise <span>&</span> Sadık</h1>
+
+    <p class="date">19 · 12 · 2026</p>
+
+    <p class="welcome" data-i18n="welcome">
+      Nous serions heureux de partager cette journée avec vous.
+    </p>
+
+    <div id="countdown"></div>
+
+    <a href="#programme" class="discover" data-i18n="discover">
+      Découvrir la journée
+    </a>
+
+  </div>
+
+</header>
+
+
+<section class="invitation">
+
+  <p class="section-small" data-i18n="invitationTitle">
+    VOUS ÊTES INVITÉS
+  </p>
+
+  <h2 data-i18n="bigDay">Notre grand jour</h2>
+
+  <img src="invitation.jpg" alt="Invitation mariage Elise et Sadık">
+
+</section>
+
+
+<section id="programme" class="programme">
+
+  <p class="section-small" data-i18n="programmeSmall">
+    19 DÉCEMBRE 2026
+  </p>
+
+  <h2 data-i18n="programmeTitle">
+    Programme de la journée
+  </h2>
+
+
+  <div class="timeline">
+
+    <div class="event">
+      <div class="time">14:00</div>
+      <div class="event-content">
+        <h3 data-i18n="gelinTitle">Gelin Çıkartma</h3>
+        <p data-i18n="gelinText">
+          Départ de la mariée et début des festivités.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="time">Après</div>
+      <div class="event-content">
+        <h3 data-i18n="photoTitle">Séance photo 📸</h3>
+        <p data-i18n="photoText">
+          Photos avec nos proches et les jeunes qui souhaitent nous accompagner.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="time">Après</div>
+      <div class="event-content">
+        <h3>Haymat — Kehl</h3>
+        <p data-i18n="haymatText">
+          Petite pause tous ensemble : chicha, boissons et quelque chose à manger pour ceux qui souhaitent venir.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="event special">
+      <div class="time">16:30</div>
+      <div class="event-content">
+        <h3 data-i18n="doorsTitle">Ouverture de la salle</h3>
+        <p data-i18n="doorsText">
+          Royal Events ouvre ses portes aux invités.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="event special">
+      <div class="time">19:00</div>
+      <div class="event-content">
+        <h3 data-i18n="arrivalTitle">Arrivée des mariés 🤍</h3>
+        <p data-i18n="arrivalText">
+          Notre arrivée à Royal Events et début de la soirée.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="time">20:00</div>
+      <div class="event-content">
+        <h3 data-i18n="dinnerTitle">Repas 🍽️</h3>
+        <p data-i18n="dinnerText">
+          Service du repas.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="time">21:00</div>
+      <div class="event-content">
+        <h3 data-i18n="cakeTitle">Gâteau 🎂</h3>
+        <p data-i18n="cakeText">
+          Découpe du gâteau des mariés.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="time">22:00</div>
+      <div class="event-content">
+        <h3>Kına ❤️</h3>
+        <p data-i18n="kinaText">
+          Cérémonie traditionnelle du henné.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="event">
+      <div class="time">23:30</div>
+      <div class="event-content">
+        <h3>Hip-Hop 🎶</h3>
+        <p data-i18n="hiphopText">
+          Place à la musique et à la fête !
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="location">
+
+  <p class="section-small" data-i18n="locationSmall">
+    LE LIEU
+  </p>
+
+  <h2>Royal Events</h2>
+
+  <p>
+    Industriegebiet 5<br>
+    77731 Willstätt<br>
+    Allemagne
+  </p>
+
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=Royal+Events+Industriegebiet+5+77731+Willstatt"
+    target="_blank"
+    class="maps"
+    data-i18n="maps">
+    Ouvrir dans Google Maps
+  </a>
+
+</section>
+
+
+<footer>
+
+  <h2>Elise <span>&</span> Sadık</h2>
+
+  <p>19 · 12 · 2026</p>
+
+  <p class="footer-message" data-i18n="footer">
+    Nous avons hâte de célébrer cette journée avec vous 🤍
+  </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
