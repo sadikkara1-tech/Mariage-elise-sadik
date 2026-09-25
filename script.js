@@ -196,3 +196,8 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 60000);
+
+// LIVRE D'OR - SUPABASE
+
+const SUPABASE_URL = "https://acoxicceqhjczfvqaklb.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFjb3hpY2NlcWhqY3pmdnFha2xiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAzMTk5NDYsImV4cCI6MjEwNTg5NTk0Nn0._euS1tN8c3YWVuy3b3AZm9xBdiU12vNijioTjYZ42YI";
