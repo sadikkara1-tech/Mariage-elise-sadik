@@ -217,3 +217,169 @@ footer h2 {
   }
 
 }
+
+/* ==========================================
+   LIVRE D'OR
+========================================== */
+
+.guestbook-section {
+  padding: 90px 20px;
+  background: #faf8f3;
+  text-align: center;
+}
+
+.guestbook-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.guestbook-kicker {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #9b7a3d;
+  margin-bottom: 15px;
+}
+
+.guestbook-section h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 55px;
+  font-weight: 500;
+  color: #493819;
+  margin-bottom: 15px;
+}
+
+.guestbook-intro {
+  max-width: 550px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+  color: #766b5a;
+}
+
+#guestbook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+#guestbook-form input,
+#guestbook-form textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid #d8ccb5;
+  border-radius: 4px;
+  background: white;
+  color: #493819;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+
+#guestbook-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+#guestbook-form input:focus,
+#guestbook-form textarea:focus {
+  border-color: #a8843e;
+}
+
+#guestbook-form button {
+  width: 100%;
+  padding: 16px 20px;
+  background: #59451e;
+  border: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#guestbook-form button:hover {
+  background: #715a2c;
+}
+
+#guestbook-status {
+  margin: 20px auto;
+  max-width: 550px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #8b6a2e;
+}
+
+.guestbook-divider {
+  margin: 55px auto 35px;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+}
+
+.guestbook-divider::before,
+.guestbook-divider::after {
+  content: "";
+  height: 1px;
+  background: #ded6c5;
+  flex: 1;
+}
+
+.guestbook-divider span {
+  padding: 0 20px;
+  color: #b39459;
+  font-size: 25px;
+}
+
+.guestbook-section h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+#guestbook-messages {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.guestbook-message {
+  background: white;
+  border: 1px solid #e4ddcf;
+  padding: 25px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.guestbook-message strong {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  color: #59451e;
+}
+
+.guestbook-message p {
+  margin-top: 10px;
+  line-height: 1.7;
+  color: #766b5a;
+}
+
+.guestbook-loading,
+.guestbook-empty {
+  color: #8d8375;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .guestbook-section {
+    padding: 70px 18px;
+  }
+
+  .guestbook-section h2 {
+    font-size: 45px;
+  }
+
+  .guestbook-section h3 {
+    font-size: 29px;
+  }
+}
