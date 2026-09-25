@@ -202,7 +202,51 @@
 
 </section>
 
+<!-- LIVRE D'OR -->
+<section class="guestbook-section" id="guestbook">
+  <div class="guestbook-container">
 
+    <p class="guestbook-kicker">ELISE & SADIK · 19.12.2026</p>
+    <h2>💌 Livre d'or</h2>
+
+    <p class="guestbook-intro">
+      Laissez-nous un petit mot pour cette journée inoubliable 🤍
+    </p>
+
+    <form id="guestbook-form">
+      <input
+        type="text"
+        id="guest-name"
+        placeholder="Votre prénom et nom"
+        maxlength="60"
+        required
+      >
+
+      <textarea
+        id="guest-message"
+        placeholder="Écrivez votre message..."
+        maxlength="500"
+        rows="5"
+        required
+      ></textarea>
+
+      <button type="submit">Envoyer mon message ♡</button>
+    </form>
+
+    <p id="guestbook-status"></p>
+
+    <div class="guestbook-divider">
+      <span>♡</span>
+    </div>
+
+    <h3>Les petits mots de nos invités</h3>
+
+    <div id="guestbook-messages">
+      <p class="guestbook-loading">Chargement des messages...</p>
+    </div>
+
+  </div>
+</section>
 <footer>
 
   <h2>Elise <span>&</span> Sadık</h2>
@@ -215,7 +259,7 @@
 
 </footer>
 
-
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="script.js"></script>
 
 </body>
